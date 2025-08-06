@@ -3,7 +3,7 @@
 function processMarks($marksArr){
 
     $sum=0;
-    foreach ($variable as  $value) {
+    foreach ($marksArr as  $value) {
         
 $sum=$sum+$value;
 
@@ -12,9 +12,11 @@ $sum=$sum+$value;
 
 
     }
-    return $value;
+    return $sum;
 }
 
-
+$pranto=[22,333,4444,55];
+$sumMarks=processMarks($pranto);
+ echo $sumMarks;
 
 ?>
