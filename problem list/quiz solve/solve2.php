@@ -1,3 +1,25 @@
+// Set A
+<?php
+class Student {
+    private $marks;
+
+    function setMarks($m) {
+        $this->marks = $m;
+    }
+
+    function getMarks() {
+        return $this->marks;
+    }
+}
+
+$student = new Student();
+$student->setMarks(82);
+echo "Input: Student->setMarks(82)<br>";
+echo "Output: Marks = " . $student->getMarks();
+?>
+
+
+// set B
 <?php
 class Account {
     private $balance;
@@ -26,5 +48,6 @@ class Account {
 $account = new Account(500);
 $account->deposit(600);
 $account->withdraw(800);
+echo "Input: \$account->setBalance(500); \$account->deposit(600); \$account->withdraw(800)<br>";
 echo "Output: Current Balance = " . $account->getBalance();
 ?>
